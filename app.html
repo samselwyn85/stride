@@ -4,6 +4,10 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stride journey</title>
+  <meta name="theme-color" content="#12100e" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -11,14 +15,14 @@
     <nav class="nav">
       <a class="brand" href="index.html">Stride</a>
       <div class="nav-links">
-        <a href="index.html#price">Price</a>
+        <a href="index.html">Home</a>
         <a href="stride-demo-rcrsp-nz.html">Cited demo</a>
       </div>
     </nav>
     <header class="hero" style="padding-bottom:20px">
       <p class="kicker">Live journey</p>
       <h1 style="font-size:clamp(28px,4.5vw,44px)">Start a path</h1>
-      <p class="lede">Type a topic. Shoulder pain in NZ opens the cited demo. Any other topic gets the six-layer template.</p>
+      <p class="lede">Type a topic. Shoulder opens the cited demo. Any other topic gets the six-layer template.</p>
     </header>
     <section class="panel" id="new">
       <form id="gen-form">
@@ -44,7 +48,6 @@
           <button class="btn ghost" type="button" id="open-demo">Open cited shoulder demo</button>
         </p>
         <p class="status" id="form-status"></p>
-        <p class="muted hidden" id="founding-note">Founding is NZD 149 / year.</p>
       </form>
     </section>
     <p class="kicker hidden" id="banner"></p>
@@ -56,8 +59,9 @@
       <section class="layer" id="home"><div id="l5"></div></section>
       <section class="layer" id="ripple"><div id="l6"></div></section>
     </div>
-    <footer>Stride — you remain the author.</footer>
+    <footer>Test build. You remain the author.</footer>
   </div>
   <script src="app.js"></script>
+  <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");</script>
 </body>
 </html>
