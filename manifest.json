@@ -1,0 +1,19 @@
+{
+  "name": "Stride",
+  "short_name": "Stride",
+  "description": "From a topic to a paper people use. Research officer for clinicians.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#12100e",
+  "theme_color": "#12100e",
+  "lang": "en-NZ",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
