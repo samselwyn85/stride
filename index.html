@@ -4,6 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Stride — From a topic to a paper people use</title>
+  <meta name="theme-color" content="#12100e" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Stride" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -17,37 +22,20 @@
       </div>
     </nav>
     <header class="hero">
-      <p class="kicker">Research officer · you remain the author</p>
+      <p class="kicker">Team test · research officer · you remain the author</p>
       <h1>From a topic to a paper people use.</h1>
-      <p class="lede">A six-layer path for clinicians and first-paper researchers. Map the field, lock a question, match a journal, leave with a post and a Monday action — without pretending the AI wrote the study.</p>
+      <p class="lede">Six layers. Map the field, lock a question, match a journal, leave with a post. Do not pretend the AI wrote the study.</p>
       <div class="hero-actions">
-        <a class="btn gold" href="app.html">Run the NZ shoulder-pain demo</a>
-        <a class="btn ghost" href="app.html#new">Start with your topic</a>
-      </div>
-      <div class="layers-preview">
-        <div class="lp"><b>01 Spark</b>Question + Te Tiriti check</div>
-        <div class="lp"><b>02 Field</b>Map you can screenshot</div>
-        <div class="lp"><b>03 Evidence</b>Table + temperature</div>
-        <div class="lp"><b>04 Shape</b>Outline a clinic can finish</div>
-        <div class="lp"><b>05 Home</b>Journal trio + do-not-send</div>
-        <div class="lp"><b>06 Ripple</b>Card, posts, Monday email</div>
+        <a class="btn gold" href="app.html">Open the journey</a>
+        <a class="btn ghost" href="stride-demo-rcrsp-nz.html">Cited shoulder demo</a>
       </div>
     </header>
     <section class="panel" id="how">
-      <p class="kicker" style="color:var(--teal)">Wedge</p>
-      <h2>Built first for physiotherapy in Aotearoa</h2>
-      <p>University tools stop at the PDF. Stride starts at the clinic problem and ends at impact. The live example is persistent rotator cuff–related shoulder pain — StePS-NZ cited only as protocol, never as unpublished results.</p>
+      <h2>What to test</h2>
+      <p>1. Landing → Journey. 2. Topic with the word shoulder. 3. Any other topic (template). 4. Copy a post. 5. On phone, Add to Home Screen.</p>
     </section>
-    <section class="panel" id="price">
-      <p class="kicker" style="color:var(--teal)">Sixty-day offer</p>
-      <h2>Pay for a path, not another login</h2>
-      <div class="grid-3">
-        <div class="card"><h3>Founding</h3><div class="price">$149<span style="font-size:16px"> / year</span></div><p class="muted">Twelve topics. Full six layers.</p><p><a class="btn" href="app.html#founding">Claim founding</a></p></div>
-        <div class="card"><h3>21-day Publish Path</h3><div class="price">$397</div><p class="muted">Cohort. Your topic. You write.</p></div>
-        <div class="card"><h3>Guided</h3><div class="price">$1,800</div><p class="muted">Three calls. Full pack.</p></div>
-      </div>
-    </section>
-    <footer>Stride is a research officer. You are the author. Not affiliated with StePS-NZ. Not clinical advice.</footer>
+    <footer>Test build. Not affiliated with StePS-NZ. Not clinical advice.</footer>
   </div>
+  <script>if ("serviceWorker" in navigator) navigator.serviceWorker.register("sw.js");</script>
 </body>
 </html>
