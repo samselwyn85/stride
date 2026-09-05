@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en-NZ">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Stride journey</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <nav class="nav">
+      <a class="brand" href="index.html">Stride</a>
+      <div class="nav-links">
+        <a href="index.html#price">Price</a>
+        <a href="stride-demo-rcrsp-nz.html">Cited demo</a>
+      </div>
+    </nav>
+    <header class="hero" style="padding-bottom:20px">
+      <p class="kicker">Live journey</p>
+      <h1 style="font-size:clamp(28px,4.5vw,44px)">Start a path</h1>
+      <p class="lede">Type a topic. Shoulder pain in NZ opens the cited demo. Any other topic gets the six-layer template.</p>
+    </header>
+    <section class="panel" id="new">
+      <form id="gen-form">
+        <label for="topic">Topic</label>
+        <input id="topic" placeholder="e.g. persistent rotator cuff-related shoulder pain in New Zealand" />
+        <div class="row">
+          <div>
+            <label for="place">Place</label>
+            <input id="place" value="Aotearoa New Zealand" />
+          </div>
+          <div>
+            <label for="role">You are</label>
+            <select id="role">
+              <option value="clinician who wants one paper">Clinician who wants one paper</option>
+              <option value="honours or masters student">Honours / masters student</option>
+              <option value="clinic owner">Clinic owner</option>
+              <option value="early-career academic">Early-career academic</option>
+            </select>
+          </div>
+        </div>
+        <p style="margin-top:16px; display:flex; gap:8px; flex-wrap:wrap">
+          <button class="btn gold" type="submit">Generate layers</button>
+          <button class="btn ghost" type="button" id="open-demo">Open cited shoulder demo</button>
+        </p>
+        <p class="status" id="form-status"></p>
+        <p class="muted hidden" id="founding-note">Founding is NZD 149 / year.</p>
+      </form>
+    </section>
+    <p class="kicker hidden" id="banner"></p>
+    <div id="workspace" class="hidden">
+      <section class="layer" id="spark"><div id="l1"></div></section>
+      <section class="layer" id="field"><div id="l2"></div></section>
+      <section class="layer" id="evidence"><div id="l3"></div></section>
+      <section class="layer" id="shape"><div id="l4"></div></section>
+      <section class="layer" id="home"><div id="l5"></div></section>
+      <section class="layer" id="ripple"><div id="l6"></div></section>
+    </div>
+    <footer>Stride — you remain the author.</footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
